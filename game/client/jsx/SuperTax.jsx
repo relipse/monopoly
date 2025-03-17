@@ -6,7 +6,7 @@ export default class SuperTax extends React.Component{
 
     render() {
         return (<div className={"super-tax grid-area-"+this.props.position+" board-card " + this.props.boardPos}>
-            <div className="title">Super Tax</div>
+            <div className="title">Luxury Tax</div>
             <div className="icon">
                 <FontAwesomeIcon icon={faHandHoldingUsd} />
             </div>

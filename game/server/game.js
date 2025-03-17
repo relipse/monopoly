@@ -75,7 +75,7 @@ class GameService {
                     {
                         position: 5,
                         owner: "1",
-                        title: "King's Cross Station",
+                        title: "Reading Railroad",
                         rent: {
                             "Rent": '$25',
                             "If 2 Stations are Owned": "$50",
@@ -88,7 +88,7 @@ class GameService {
                     {
                         position: 15,
                         owner: "1",
-                        title: "Marylebone Station",
+                        title: "Pennsylvania Railroad",
                         rent: {
                             "Rent": '$25',
                             "If 2 Stations are Owned": "$50",
@@ -114,7 +114,7 @@ class GameService {
                     {
                         position: 35,
                         owner: "1",
-                        title: "Liverpool St. Station",
+                        title: "Short Line",
                         rent: {
                             "Rent": '$25',
                             "If 2 Stations are Owned": "$50",
@@ -129,7 +129,7 @@ class GameService {
                     {
                         position: 37,
                         owner: "1",
-                        title: "Park Plce",
+                        title: "Park Place",
                         color: "#1a2596",
                         rent: {
                             "Rent": "$35",
@@ -152,7 +152,7 @@ class GameService {
                     {
                         position: 39,
                         owner: "1",
-                        title: "Boardwlk",
+                        title: "Boardwalk",
                         color: "#1a2596",
                         rent: {
                             "Rent": "$50",
@@ -175,7 +175,7 @@ class GameService {
                     {
                         position: 31,
                         owner: "1",
-                        title: "Pacifc Avenue",
+                        title: "Pacific Avenue",
                         color: "#008e04",
                         rent: {
                             "Rent": "$26",
@@ -198,7 +198,7 @@ class GameService {
                     {
                         position: 34,
                         owner: "1",
-                        title: "Pennsylvnia Avenue",
+                        title: "Pennsylvania Avenue",
                         color: "#008e04",
                         rent: {
                             "Rent": "$28",
@@ -221,7 +221,7 @@ class GameService {
                     {
                         position: 32,
                         owner: "1",
-                        title: "Nrth Carolina Avenue",
+                        title: "North Carolina Avenue",
                         color: "#008e04",
                         rent: {
                             "Rent": "$26",
@@ -244,7 +244,7 @@ class GameService {
                     {
                         position: 26,
                         owner: "1",
-                        title: "Atlntic Avenue",
+                        title: "Atlantic Avenue",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$22",
@@ -267,7 +267,7 @@ class GameService {
                     {
                         position: 27,
                         owner: "1",
-                        title: "Vntor Avenue",
+                        title: "Ventnor Avenue",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$22",
@@ -290,7 +290,7 @@ class GameService {
                     {
                         position: 29,
                         owner: "1",
-                        title: "Mrvin Gardens",
+                        title: "Marvin Gardens",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$24",
@@ -381,7 +381,7 @@ class GameService {
                     },
                     {
                         position: 16,
-                        title: "Bow Street",
+                        title: "St. James Place",
                         color: "#d68000",
                         owner: "1",
                         rent: {
@@ -404,7 +404,7 @@ class GameService {
                     },
                     {
                         position: 18,
-                        title: "Marlborough Street",
+                        title: "Tennessee Avenue",
                         color: "#d68000",
                         owner: "1",
                         rent: {
@@ -427,7 +427,7 @@ class GameService {
                     },
                     {
                         position: 19,
-                        title: "Vine Street",
+                        title: "New York Avenue",
                         color: "#d68000",
                         owner: "1",
                         rent: {
@@ -450,7 +450,7 @@ class GameService {
                     },
                     {
                         position: 13,
-                        title: "WhiteHall",
+                        title: "State Avenue",
                         color: "#930086",
                         owner: "1",
                         rent: {
@@ -473,7 +473,7 @@ class GameService {
                     },
                     {
                         position: 11,
-                        title: "Pall Mall",
+                        title: "St. Charles Place",
                         color: "#930086",
                         owner: "1",
                         rent: {
@@ -496,7 +496,7 @@ class GameService {
                     },
                     {
                         position: 14,
-                        title: "Northumber land Avenue",
+                        title: "Virginia Avenue",
                         color: "#930086",
                         owner: "1",
                         rent: {
@@ -519,7 +519,7 @@ class GameService {
                     },
                     {
                         position: 6,
-                        title: "The Angel, Islington",
+                        title: "Oriental Avenue",
                         color: "#6ba9a5",
                         owner: "1",
                         rent: {
@@ -542,7 +542,7 @@ class GameService {
                     },
                     {
                         position: 8,
-                        title: "Euston Road",
+                        title: "Vermont Avenue",
                         color: "#6ba9a5",
                         owner: "1",
                         rent: {
@@ -565,7 +565,7 @@ class GameService {
                     },
                     {
                         position: 9,
-                        title: "Pentonville Road",
+                        title: "Connecticut Avenue",
                         color: "#6ba9a5",
                         owner: "1",
                         rent: {
@@ -588,7 +588,7 @@ class GameService {
                     },
                     {
                         position: 1,
-                        title: "Old Kent Road",
+                        title: "Mediterranean Avenue",
                         color: "#614901",
                         owner: "1",
                         rent: {
@@ -611,7 +611,7 @@ class GameService {
                     },
                     {
                         position: 3,
-                        title: "WhiteChapel Road",
+                        title: "Baltic Avenue",
                         color: "#614901",
                         owner: "1",
                         rent: {
@@ -670,7 +670,7 @@ class GameService {
                         "Advance to the nearest utility, if UNOWNED, you may buy it from the bank. If OWNED, roll the dice and pay the owner 10 times your roll",
                         "Make general repairs on all you property: For each house pay $25, for each hotel pay $100",
                         "Go back 3 spaces",
-                        "Advance to Pall Mall, if you pass go collect $200"
+                        "Advance to St. Charles Place, if you pass go collect $200"
                     ]),
                     used: []
 
