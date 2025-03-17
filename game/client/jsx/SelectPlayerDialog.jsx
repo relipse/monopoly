@@ -17,6 +17,7 @@ export default class SelectPlayerDialog extends React.Component {
     setPlayerName = (event) => {
         const player = this.state.newPlayer;
         player.name = event.target.value;
+        player.setNameByToken = false;
         this.setState({newPlayer: player});
     }
 
@@ -24,8 +25,9 @@ export default class SelectPlayerDialog extends React.Component {
         const player = this.state.newPlayer;
         player.token = token;
         // Auto-fill name with token if the name field is empty
-        if (!player.name.trim()) {
+        if (!player.name.trim() || player.setNameByToken) {
             player.name = token;
+            player.setNameByToken = true;
         }
         this.setState({newPlayer: player});
     }
@@ -71,15 +73,15 @@ export default class SelectPlayerDialog extends React.Component {
                 {!this.props.game.started && <div className="new-player">
                     {availablePlayers.length > 0 && <h3>Or create a new Player</h3>}
                     {availablePlayers.length === 0 && <h1>Create a new Player</h1>}
-                    <div>
-                        <input type="text" placeholder="Player name" value={this.state.newPlayer.name}
-                               onChange={this.setPlayerName}/>
-                    </div>
                     <p>Select token:</p>
                     <div className="tokens">
                         {availableTokens.map(t => <span key={t} onClick={() => this.selectToken(t)}>
                         <Token token={t} selected={this.state.newPlayer.token === t}/>
                     </span>)}
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Player name" value={this.state.newPlayer.name}
+                               onChange={this.setPlayerName}/>
                     </div>
                     <button onClick={this.addPlayer}>Start</button>
                     &nbsp;{this.state.error}
