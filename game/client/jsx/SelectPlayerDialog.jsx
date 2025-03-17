@@ -33,8 +33,11 @@ export default class SelectPlayerDialog extends React.Component {
     addPlayer = () => {
         const player = this.state.newPlayer;
         if (player.name.length === 0) {
-            this.setState({error: 'Name is empty'})
-            return;
+            if (player.token.length === 0) {
+                this.setState({error: 'The Player Name is empty'})
+                return;
+            }
+            player.name = player.token;
         }
         if (player.token.length === 0) {
             this.setState({error: 'You need to select a token'})
