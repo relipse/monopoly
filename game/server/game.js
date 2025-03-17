@@ -152,7 +152,7 @@ class GameService {
                     {
                         position: 39,
                         owner: "1",
-                        title: "Board Wlk",
+                        title: "Boardwlk",
                         color: "#1a2596",
                         rent: {
                             "Rent": "$50",
@@ -175,7 +175,7 @@ class GameService {
                     {
                         position: 31,
                         owner: "1",
-                        title: "Regent Street",
+                        title: "Pacifc Avenue",
                         color: "#008e04",
                         rent: {
                             "Rent": "$26",
@@ -198,7 +198,7 @@ class GameService {
                     {
                         position: 34,
                         owner: "1",
-                        title: "Bond Street",
+                        title: "Pennsylvnia Avenue",
                         color: "#008e04",
                         rent: {
                             "Rent": "$28",
@@ -221,7 +221,7 @@ class GameService {
                     {
                         position: 32,
                         owner: "1",
-                        title: "Oxford Street",
+                        title: "Nrth Carolina Avenue",
                         color: "#008e04",
                         rent: {
                             "Rent": "$26",
@@ -244,7 +244,7 @@ class GameService {
                     {
                         position: 26,
                         owner: "1",
-                        title: "Leicester Square",
+                        title: "Atlntic Avenue",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$22",
@@ -267,7 +267,7 @@ class GameService {
                     {
                         position: 27,
                         owner: "1",
-                        title: "Coventry Street",
+                        title: "Vntor Avenue",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$22",
@@ -290,7 +290,7 @@ class GameService {
                     {
                         position: 29,
                         owner: "1",
-                        title: "Picadilly",
+                        title: "Mrvin Gardens",
                         color: "#d6d105",
                         rent: {
                             "Rent": "$24",
@@ -313,7 +313,7 @@ class GameService {
                     {
                         position: 23,
                         owner: "1",
-                        title: "Fleet Street",
+                        title: "Indana Avenue",
                         color: "#9f0108",
                         rent: {
                             "Rent": "$18",
@@ -336,7 +336,7 @@ class GameService {
                     {
                         position: 21,
                         owner: "1",
-                        title: "Strand",
+                        title: "Kentcky Avenue",
                         color: "#9f0108",
                         rent: {
                             "Rent": "$18",
@@ -359,7 +359,7 @@ class GameService {
                     {
                         position: 24,
                         owner: "1",
-                        title: "Trafalgar Square",
+                        title: "Illnois Avenue",
                         color: "#9f0108",
                         rent: {
                             "Rent": "$20",
@@ -662,7 +662,7 @@ class GameService {
                         "Advance to MayFair",
                         "Advance to the next station. If UNOWNED, you may buy it from the bank. If OWNED, pay the owner twice the rent to which they are otherwise entitled",
                         "You have been elected chairman of the board, pay each player $50",
-                        "Advance to Trafalgar Square. If you pass go collect $200",
+                        "Advance to Illnois Avenue. If you pass go collect $200",
                         "Your building loan matures, collect $150",
                         "Advance to go, collect $200",
                         "Take a trip to king's cross station, if you pass go collect $200",
