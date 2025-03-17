@@ -23,6 +23,10 @@ export default class SelectPlayerDialog extends React.Component {
     selectToken = (token) => {
         const player = this.state.newPlayer;
         player.token = token;
+        // Auto-fill name with token if the name field is empty
+        if (!player.name.trim()) {
+            player.name = token;
+        }
         this.setState({newPlayer: player});
     }
 
