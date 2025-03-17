@@ -129,7 +129,7 @@ class GameService {
                     {
                         position: 37,
                         owner: "1",
-                        title: "Park Lane",
+                        title: "Park Plce",
                         color: "#1a2596",
                         rent: {
                             "Rent": "$35",
@@ -152,7 +152,7 @@ class GameService {
                     {
                         position: 39,
                         owner: "1",
-                        title: "MayFair",
+                        title: "Board Wlk",
                         color: "#1a2596",
                         rent: {
                             "Rent": "$50",
