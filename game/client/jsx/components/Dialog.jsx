@@ -11,7 +11,15 @@ export default class Dialog extends React.Component {
                     {this.props.children}
 
                     <div className="actions">
-                        {this.props.actions && this.props.actions.map(a => <div key={a.name} className="action" onClick={a.click}>{a.name}</div>)}
+                        {this.props.actions && this.props.actions.map(a => (
+                            <div
+                                key={a.name}
+                                className={`action ${a.className || ''}`}
+                                onClick={a.click}
+                            >
+                                {a.name}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
