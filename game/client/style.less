@@ -784,6 +784,101 @@ h3 {
   }
 }
 
+.send-money-dialog {
+  .select-notes {
+    .notes {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .noteStack {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: left;
+        border: 2px solid #000;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #f5f5dc; /* Light beige for paper effect */
+        width: 100px;
+        text-align: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+
+      .note {
+        width: 90px;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 1.2rem;
+        border: 2px solid #000;
+        border-radius: 5px;
+        margin: 5px 0;
+        background-image: linear-gradient(145deg, #fff, #e6e6e6);
+      }
+
+      .note[value="500"] {
+        background-color: #ff4500; /* Orange */
+        color: #fff;
+      }
+
+      .note[value="100"] {
+        background-color: #008000; /* Green */
+        color: #fff;
+      }
+
+      .note[value="50"] {
+        background-color: #ffd700; /* Yellow/Gold */
+        color: #000;
+      }
+
+      .note[value="20"] {
+        background-color: #add8e6; /* Light Blue */
+        color: #000;
+      }
+
+      .note[value="10"] {
+        background-color: #800080; /* Purple */
+        color: #fff;
+      }
+
+      .note[value="5"] {
+        background-color: #ff69b4; /* Pink */
+        color: #000;
+      }
+
+      .note[value="1"] {
+        background-color: #d3d3d3; /* Grey */
+        color: #000;
+      }
+
+      .noteStack div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      button {
+        background-color: #0078d7;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 2px 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #005ea5;
+      }
+    }
+  }
+}
+
 
 .game-settings {
   position: absolute;
