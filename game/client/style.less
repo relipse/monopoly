@@ -736,6 +736,7 @@ h3 {
   }
 }
 
+
 .note {
   width: @noteWidth;
   height: @noteHeight;
@@ -789,6 +790,42 @@ h3 {
 
       .note {
         margin: 5px;
+      }
+      // Adding Monopoly-style elements
+      .note::before,
+      .note::after {
+        content: attr(value);
+        position: absolute;
+        font-size: 0.8rem;
+        top: 5px;
+        left: 5px;
+      }
+
+      .note::after {
+        top: auto;
+        bottom: 5px;
+        right: 5px;
+        left: auto;
+      }
+
+      .noteStack div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      button {
+        background-color: #0078d7;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 2px 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background-color: #005ea5;
       }
     }
   }
