@@ -60,7 +60,7 @@ export default class SendMoneyDialog extends React.Component {
                     click: () => this.props.dismiss(),
                 },
                 {
-                    className: 'primaryBold',
+                    className: 'primaryBold moneyTextShadow',
                     name: 'Send $' + sum,
                     click: () => this.sendMoney(),
                 },
