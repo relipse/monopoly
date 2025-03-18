@@ -6,8 +6,15 @@ import {faCog} from '@fortawesome/free-solid-svg-icons';
 
 export default class Settings extends React.Component {
     state = {
-        showSettings: false
+        showSettings: false,
+        showMoneyText: false
     }
+
+    toggleMoneyText = () => {
+        this.setState({ showMoneyText: !this.state.showMoneyText });
+        this.props.toggleMoneyText(!this.state.showMoneyText);  // Pass to parent
+    }
+
     saveGame = () => {
 
         const now = new Date();
@@ -68,6 +75,9 @@ export default class Settings extends React.Component {
             {this.state.showSettings && <ul>
                 <li onClick={this.saveGame}>Save game</li>
                 <li onClick={this.loadGame}>Load game</li>
+                <li onClick={this.toggleMoneyText}>
+                    {this.state.showMoneyText ? 'Hide' : 'Show'} Text Over Money
+                </li>
                 <li onClick={this.props.showHelp}>Show help dialog</li>
             </ul>
             }
