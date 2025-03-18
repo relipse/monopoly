@@ -6,6 +6,10 @@ ADD . /src/
 WORKDIR /src/client
 RUN  npm install && npm run build
 
+# Step 4: Copy images manually if Parcel doesn't include them
+RUN mkdir -p /src/static/images
+COPY /src/client/images /src/static/images
+
 WORKDIR /src
 RUN npm install
 

@@ -38,6 +38,14 @@
 @fiveColor: #9e789f;
 @oneColor: rgba(186, 183, 187, 0.44);
 
+@money1: "~./images/money_1.png";
+@money5: "~./images/money_5.png";
+@money10: "~./images/money_10.png";
+@money20: "~./images/money_20.png";
+@money50: "~./images/money_50.png";
+@money100: "~./images/money_100.png";
+@money500: "~./images/money_500.png";
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
@@ -785,34 +793,13 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  &.v500 {
-    background-image: url('./images/money_500.png');
-  }
-
-  &.v100 {
-    background-image: url('./images/money_100.png');
-  }
-
-  &.v50 {
-    background-image: url('./images/money_50.png');
-  }
-
-  &.v20 {
-    background-image: url('./images/money_20.png');
-  }
-
-  &.v10 {
-    background-image: url('./images/money_10.png');
-  }
-
-  &.v5 {
-    background-image: url('../images/money_5.png');
-  }
-
-  &.v1 {
-    background-image: url('../images/money_1.png');
-  }
+  &.v500 { background-image: url(@money500); }
+  &.v100 { background-image: url(@money100); }
+  &.v50 { background-image: url(@money50); }
+  &.v20 { background-image: url(@money20); }
+  &.v10 { background-image: url(@money10); }
+  &.v5  { background-image: url(@money5); }
+  &.v1  { background-image: url(@money1); }
 }
 
 .send-money-dialog {
