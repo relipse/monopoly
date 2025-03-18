@@ -82,7 +82,7 @@ export default class SendMoneyDialog extends React.Component {
                         <h3>Select notes</h3>
                         <div className="notes">
                             {notes.map(k => <div key={k} className="noteStack">
-                                    <Note value={k}/>
+                                    <Note value={k} bgIsMoney={true}/>
                                     <div>
                                         <button onClick={() => this.removeNote(k)}>-</button>
                                         &nbsp;

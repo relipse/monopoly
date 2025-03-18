@@ -23,7 +23,7 @@ export default class PlayerBoard extends React.Component {
                     <p>Total: ${gameService.calculateNotesSum(player.notes)}</p>
                     <div className="notes">
                         {notes.map(k => <div key={k} className="noteStack">
-                                <Note value={k}/>
+                                <Note value={k} bgIsMoney={true}/>
                                 <small>x{player.notes[k]}</small>
                             </div>
                         )}
